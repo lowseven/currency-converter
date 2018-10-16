@@ -1,0 +1,36 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "daily currency converter",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "./node_modules/.bin/webpack -p",
+    "webpack:build": "webpack --progress --config webpack.config.js",
+    "start": "./node_modules/.bin/webpack-dev-server --progress --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowseven/currency-converter.git"
+  },
+  "keywords": [
+    "currency",
+    "converter"
+  ],
+  "author": "Railyn Lopez Morillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lowseven/currency-converter/issues"
+  },
+  "homepage": "https://github.com/lowseven/currency-converter#readme",
+  "devDependencies": {
+    "angular": "^1.7.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
