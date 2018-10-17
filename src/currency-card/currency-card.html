@@ -1,19 +1,15 @@
-<div class="converter">
-    <h3>1 USD = 0.8110 EUR</h3>
-
-    <div class="converter-content">
+<div>
+    <h3 ng-model="con.resultCurr"> 1 {{con.baseCode}} = {{con.resultCurr | number: 2 }} {{con.exchangeCode}}</h3>
+    <div class="converter">
+        
         <div class="converter-header">
-            <div class="converter-header-flag">
-                <span>Flag</span>
-                <b>Country Name here</b>
-            </div>
-            <div class="converter-header-drop">
-                <i class="fas fa-angle-down"></i>
-            </div>
+            <select ng-model="con.exchangeCode" ng-change="con.convertBaseExchange()">
+                <option ng-repeat="item in con.currencies" value="{{item.code}}">{{item.countryName}}</option>
+            </select>
         </div>
-
-        <div class="converter-value">
-            <p>2.47</p>
+    
+        <div class="converter-content">
+            <input class="converter-input" type="text" ng-model="con.baseExchangeValue" ng-change="con.updateInput()">
         </div>
         
     </div>

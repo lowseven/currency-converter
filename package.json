@@ -24,6 +24,7 @@
   "homepage": "https://github.com/lowseven/currency-converter#readme",
   "devDependencies": {
     "angular": "^1.7.5",
+    "axios": "^0.18.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "html-loader": "^0.5.5",
@@ -31,6 +32,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.9",
+    "x2js": "^3.2.1"
   }
 }

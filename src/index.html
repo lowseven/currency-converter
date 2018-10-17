@@ -5,14 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
     </head>
-    <body>
-        <div ng-app="converter">
-            <!-- <h1>Currency Converter</h1> -->
-
-            <currency-card></currency-card>
-            
-            <i class="fas fa-exchange-alt"></i>
+    <body ng-app="converterModule" ng-controller="mainController">
+        <section>
+            <h1>Currency Converter</h1>
+            <div class="cards">
+                <currency-card base-code="baseChangeCode" exchange-code="toExchangeCode" base-exchange-value="baseExchangeValue" to-exchange-value="toExchangeValue"></currency-card>
+                <div class="exchange-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <currency-card base-code="toExchangeCode" exchange-code="baseChangeCode" base-exchange-value="toExchangeValue" to-exchange-value="baseExchangeValue"></currency-card>
+            </div>
+        </section>
+        
+        <div class="infos">
+            <p>Follow me</p>
+            <a href="https://twitter.com/LopezRailyn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/railyn-lopez-morillo-a67839103"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/lowseven/currency-converter"><i class="fab fa-github-alt"></i></a>
         </div>
     </body>
 </html>
