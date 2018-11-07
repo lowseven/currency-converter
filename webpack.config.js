@@ -22,12 +22,17 @@ module.exports =
                 exclude: /node_modules/,
             },
             {
+                test: /\.xml$/,
+                use: [ 'xml-loader' ],
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.html$/,
                 use: [{
                         loader: 'html-loader',
                         options: {
-                        // minimize: false,
-                        // removeComments: true,
+                        minimize: false,
+                        removeComments: true,
                     }
                 }],
             }   

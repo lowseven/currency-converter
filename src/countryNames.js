@@ -33,42 +33,4 @@ const countryNames = [
     { countryName: 'South Africa Rand', code: 'ZAR' },
 ];
 
-const data = [
-    { currency: "USD", rate: 1.1417 },
-    { currency: "JPY", rate: 128.89 },
-    { currency: "BGN", rate: 1.9558 },
-    { currency: "CZK", rate: 25.782 },
-    { currency: "DKK", rate: 7.4603 },
-    { currency: "GBP", rate: 0.87870 },
-    { currency: "HUF", rate: 321.62 },
-    { currency: "PLN", rate: 4.3202 },
-    { currency: "RON", rate: 4.6612 },
-    { currency: "SEK", rate: 10.3123 },
-    { currency: "CHF", rate: 1.1422 },
-    { currency: "ISK", rate: 138.10 },
-    { currency: "NOK", rate: 9.5143 },
-    { currency: "HRK", rate: 7.4393 },
-    { currency: "RUB", rate: 75.3127 },
-    { currency: "TRY", rate: 6.2539 },
-    { currency: "AUD", rate: 1.5840 },
-    { currency: "BRL", rate: 4.2205 },
-    { currency: "CAD", rate: 1.4956 },
-    { currency: "CNY", rate: 7.8712 },
-    { currency: "HKD", rate: 8.9391 },
-    { currency: "IDR", rate: 17031.88 },
-    { currency: "ILS", rate: 4.2160 },
-    { currency: "INR", rate: 82.7085 },
-    { currency: "KRW", rate: 1276.25 },
-    { currency: "MXN", rate: 22.8399 },
-    { currency: "MYR", rate: 4.7483 },
-    { currency: "NZD", rate: 1.7154 },
-    { currency: "PHP", rate: 60.693 },
-    { currency: "SGD", rate: 1.5686 },
-    { currency: "THB", rate: 37.539 },
-    { currency: "ZAR", rate: 16.3720 },
-];
-
-export {
-    data,
-    countryNames
-}
+export default countryNames;

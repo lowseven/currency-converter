@@ -7,4 +7,4 @@ const controller = function controller($scope)
     $scope.toExchangeValue = 0;
 }
 
-export default ['$scope', controller]
+export default ['$scope', controller];
